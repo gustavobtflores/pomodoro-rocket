@@ -1,6 +1,6 @@
 import { differenceInSeconds } from 'date-fns'
 import { useContext, useEffect } from 'react'
-import { CyclesContext } from '../..'
+import { CyclesContext } from '../../../../contexts/CyclesContext'
 import { CountdownContainer, Separator } from './styles'
 
 export function Countdown() {
@@ -58,6 +58,7 @@ export function Countdown() {
     activeCycleId,
     totalSecondsAmount,
     markCurrentCycleAsFinished,
+    setSecondsPassed,
   ])
 
   return (
